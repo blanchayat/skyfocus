@@ -1,0 +1,55 @@
+
+name: skyfocus
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.3
+  flutter_local_notifications: ^17.2.3
+  audioplayers: ^6.0.0
+  wakelock_plus: ^1.2.0
+  # --- YENİ EKLENENLER ---
+  fl_chart: ^0.66.0
+  intl: ^0.19.0
+  google_mobile_ads: ^6.0.0
+  confetti: ^0.8.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Paket burada tanımlanır (Doğru yer)
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+
+# --- İKON AYARLARI (EN SOLA YASLI OLMAK ZORUNDA) ---
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo1.png"
+  min_sdk_android: 21
+  # Bu iki satır ikonu büyütür ve arka planı renkli yapar:
+  adaptive_icon_background: "#CFEEFF" 
+  adaptive_icon_foreground: "assets/logo1.png"
+
+# --- FLUTTER AYARLARI (EN SOLA YASLI) ---
+flutter:
+  uses-material-design: true
+  
+  # Resim yolları
+  assets:
+    - assets/plane.png
+    - assets/diver_man.png
+    - assets/parachute_man.png
+    - assets/cloud1.png
+    - assets/cloud2.png
+    - assets/logo.png  
+    - assets/logo1.png
+    - assets/audio/
+ 
